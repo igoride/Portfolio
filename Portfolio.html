@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-portfolio.css">
+    <title>Portfólio - Meu Blog Pessoal</title>
+</head>
+<body>    
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        <ul class="menu-items" id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+        </ul>
+        <div class="github-icon">
+            <a href="https://github.com/" target="_blank">
+                <img src="icone-git.png" alt="Github"> 
+            </a>
+        </div>
+    </nav>
+
+    <header class="blog-header">
+        <div class="container">
+            <h1 class="blog-title">Meu Portfólio</h1>
+            <p class="blog-description">Alguns dos meus projetos e trabalhos recentes</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="portfolio-section">
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="imagens/projeto1.jpg" alt="Projeto 1">
+                    <div class="portfolio-overlay">
+                        <h3>Sistema de Gerenciamento</h3>
+                        <p>Plataforma web para gestão de tarefas e projetos</p>
+                        <a href="#" class="portfolio-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="imagens/projeto2.jpg" alt="Projeto 2">
+                    <div class="portfolio-overlay">
+                        <h3>Identidade Visual</h3>
+                        <p>Design de marca para empresa de tecnologia</p>
+                        <a href="#" class="portfolio-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="imagens/projeto3.jpg" alt="Projeto 3">
+                    <div class="portfolio-overlay">
+                        <h3>Aplicativo de Fitness</h3>
+                        <p>App mobile para acompanhamento de exercícios</p>
+                        <a href="#" class="portfolio-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="imagens/projeto4.jpg" alt="Projeto 4">
+                    <div class="portfolio-overlay">
+                        <h3>Loja Virtual</h3>
+                        <p>E-commerce completo com sistema de pagamentos</p>
+                        <a href="#" class="portfolio-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="imagens/projeto5.jpg" alt="Projeto 5">
+                    <div class="portfolio-overlay">
+                        <h3>Redesign de Website</h3>
+                        <p>Atualização de interface e experiência do usuário</p>
+                        <a href="#" class="portfolio-link">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <img src="imagens/projeto6.jpg" alt="Projeto 6">
+                    <div class="portfolio-overlay">
+                        <h3>Jogo Educativo</h3>
+                        <p>Aplicativo mobile para aprendizado infantil</p>
+                        <a href="#" class="portfolio-link">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Meu Blog Pessoal. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="imagens/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuItems = document.getElementById('menuItems');
+            menuItems.classList.toggle('active');
+        }
+
+        // Filtro do portfólio
+        document.querySelectorAll('.filter-btn').forEach();

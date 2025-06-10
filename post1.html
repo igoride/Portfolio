@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-post.css">
+    <title>Meu Primeiro Projeto em JavaScript - Meu Blog Pessoal</title>
+</head>
+<body>    
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        <ul class="menu-items" id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+        </ul>
+        <div class="github-icon">
+            <a href="https://github.com/" target="_blank">
+                <img src="icone-git.png" alt="Github"> 
+            </a>
+        </div>
+    </nav>
+
+    <header class="post-header">
+        <div class="container">
+            <h1 class="post-title">Meu Primeiro Projeto em JavaScript</h1>
+            <div class="post-meta">
+                <span>Publicado em 15 de Junho de 2025</span> | 
+                <span>Categoria: <a href="#">Programação</a></span> | 
+                <span>Autor: Igor Yoshimitsu Ide</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="full-post">
+            <img src="imagens/javascript-project.jpg" alt="Projeto JavaScript" class="post-featured-image">
+            
+            <div class="post-content">
+                <p>Recentemente comecei a aprender JavaScript e decidi criar meu primeiro projeto: um simples jogo da velha. Foi desafiador, mas extremamente gratificante ver o código funcionando.</p>
+                
+                <h2>Por que um Jogo da Velha?</h2>
+                <p>Escolhi começar com um jogo da velha porque:</p>
+                <ul>
+                    <li>É simples o suficiente para um primeiro projeto</li>
+                    <li>Envolve lógica de programação básica</li>
+                    <li>Permite praticar manipulação do DOM</li>
+                    <li>Tem um escopo bem definido</li>
+                </ul>
+                
+                <h2>Desafios Encontrados</h2>
+                <p>Alguns dos desafios que enfrentei:</p>
+                
+                <pre><code class="language-javascript">// Exemplo de código do projeto
+function checkWinner() {
+    const winningCombinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // linhas
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // colunas
+        [0, 4, 8], [2, 4, 6]             // diagonais
+    ];
+    
+    for (let combo of winningCombinations) {
+        const [a, b, c] = combo;
+        if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+            return board[a];
+        }
+    }
+    return null;
+}</code></pre>
+                
+                <h2>Lições Aprendidas</h2>
+                <p>Este projeto me ensinou várias coisas valiosas:</p>
+                <ol>
+                    <li>Como estruturar um projeto simples</li>
+                    <li>A importância do planejamento antes de codar</li>
+                    <li>Como depurar código JavaScript</li>
+                    <li>Manipulação básica do DOM</li>
+                </ol>
+                
+                <div class="post-tags">
+                    <span>Tags:</span>
+                    <a href="#">JavaScript</a>,
+                    <a href="#">Iniciante</a>,
+                    <a href="#">Jogos</a>
+                </div>
+            </div>
+            
+            <div class="post-navigation">
+                <a href="#" class="prev-post">&larr; Post Anterior</a>
+                <a href="#" class="next-post">Próximo Post &rarr;</a>
+            </div>
+        </article>
+        
+        <section class="comments-section">
+            <h3>Comentários (3)</h3>
+            
+            <div class="comment">
+                <div class="comment-author">
+                    <img src="imagens/user1.jpg" alt="Usuário 1">
+                    <h4>Carlos Silva</h4>
+                    <span>20 de Junho, 2023</span>
+                </div>
+                <div class="comment-content">
+                    <p>Parabéns pelo projeto! Lembro quando fiz meu primeiro jogo da velha em JS, foi uma experiência incrível. Continue postando sobre sua jornada!</p>
+                </div>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">
+                    <img src="imagens/user2.jpg" alt="Usuário 2">
+                    <h4>Ana Oliveira</h4>
+                    <span>18 de Junho, 2023</span>
+                </div>
+                <div class="comment-content">
+                    <p>Ótimo post para iniciantes! Você poderia fazer um tutorial passo a passo? Ajudaria muita gente que está começando.</p>
+                </div>
+            </div>
+            
+            <form class="comment-form">
+                <h3>Deixe seu comentário</h3>
+                <div class="form-group">
+                    <label for="comment-name">Nome:</label>
+                    <input type="text" id="comment-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-email">Email:</label>
+                    <input type="email" id="comment-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment-message">Comentário:</label>
+                    <textarea id="comment-message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Comentário</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Meu Blog Pessoal. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="imagens/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="imagens/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menuItems = document.getElementById('menuItems');
+            menuItems.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
