@@ -8,21 +8,23 @@
 </head>
 <body>    
     <nav class="navbar">
+
         <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        
         <ul class="menu-items" id="menuItems">
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
+            <!--<li><a href="portfolio.html">Portfólio</a></li>-->
+            <div class="github-icon">
+                <a href="https://github.com/" target="_blank">
+                    <img src="Imagens/github.png" alt="Github">
+                </a>
+            </div>
         </ul>
-        <div class="github-icon">
-            <a href="https://github.com/" target="_blank">
-                <img src="icone-git.png" alt="Github"> 
-            </a>
-        </div>
     </nav>
 
-    <header class="blog-header">
+    <header class="header">
         <div class="container">
             <h1 class="blog-title">Entre em Contato</h1>
             <p class="blog-description">Estou aberto(a) a novas oportunidades e colaborações</p>
@@ -82,12 +84,14 @@
     </main>
 
     <footer class="footer">
+
         <div class="container">
             <p>&copy; 2025 Meu Blog Pessoal.</p>
-            <div class="social-links">
-                <a href="#"><img src="imagens/linkedin.webp" alt="LinkedIn"></a>
-            </div>
         </div>
+
+        <a href="#"><img id="r1" src="imagens/linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img id="r2" src="Imagens/github.png" alt="Github"></a>
+
     </footer>
 
     <script>

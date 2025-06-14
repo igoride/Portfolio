@@ -8,21 +8,23 @@
 </head>
 <body>    
     <nav class="navbar">
+
         <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        
         <ul class="menu-items" id="menuItems">
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a href="portfolio.html">Portfólio</a></li>
+            <!--<li><a href="portfolio.html">Portfólio</a></li>-->
+            <div class="github-icon">
+                <a href="https://github.com/" target="_blank">
+                    <img src="Imagens/github.png" alt="Github">
+                </a>
+            </div>
         </ul>
-        <div class="github-icon">
-            <a href="https://github.com/" target="_blank">
-                <img src="icone-git.png" alt="Github"> 
-            </a>
-        </div>
     </nav>
 
-    <header class="blog-header">
+    <header class="header">
         <div class="container">
             <h1 class="blog-title">Sobre</h1>
             <p class="blog-description">Conheça minha jornada e paixões</p>
@@ -32,11 +34,11 @@
     <main class="container">
         <section class="about-section">
             <div class="about-content">
-                <img src="Imagens/perfil.jpg" alt="Minha Foto" class="about-image">
+                <img src="Imagens/Igor.jpg" alt="Minha Foto" class="about-image">
                 <div class="about-text">
                     <h2>Meu nome é Igor</h2>
-                    <p>Sou um apaixonado por tecnologia e aprendizado contínuo. Minha jornada começou quando [breve história sobre como começou seu interesse].</p>
-                    <p>Atualmente trabalho com [sua área] e estou focado(a) em [seus objetivos atuais].</p>
+                    <p>Nascido em 2000, minha jornada começou quando criança quando vi meu pai consertar um desktop pela primeira vez, em 2017 comclui o ensino médio e logo a seguir em 2018 começei os estudos na UNESP.</p>
+                    <p>Atualmente trabalho como técnico de Informatica e estou focado na faculdade me aprimorando como desenvolvedor.</p>
                 </div>
             </div>
 
@@ -44,27 +46,39 @@
                 <h3>Minhas Habilidades</h3>
                 <div class="skills-grid">
                     <div class="skill">
-                        <h4>Desenvolvimento Web</h4>
+                        <h4>Backend</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <h4>Banco de dados</h4>
                         <div class="skill-bar">
                             <div class="skill-level" style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="skill">
+                        <h4>Desenvolvimento Web</h4>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
                         <h4>Design UI/UX</h4>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 65%;"></div>
+                            <div class="skill-level" style="width: 40%;"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <h4>JavaScript</h4>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 75%;"></div>
+                            <div class="skill-level" style="width: 70%;"></div>
                         </div>
                     </div>
                     <div class="skill">
                         <h4>Gestão de Projetos</h4>
                         <div class="skill-bar">
-                            <div class="skill-level" style="width: 70%;"></div>
+                            <div class="skill-level" style="width: 60%;"></div>
                         </div>
                     </div>
                 </div>
@@ -80,6 +94,13 @@
                     </div>
                 </div>
                 <div class="timeline-item">
+                    <div class="timeline-date">2025 - Atual</div>
+                    <div class="timeline-content">
+                        <h4>Técnico de Informática</h4>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
                     <div class="timeline-date">2023 - 2024</div>
                     <div class="timeline-content">
                         <h4>Coordenador de Tecnologia da Informação</h4>
@@ -91,6 +112,20 @@
                     <div class="timeline-content">
                         <h4>Estudante de Ciência da Computação</h4>
                         <p>Universidade Estadual Paulista - UNESP</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <h4>Conclusão do Ensino médio</h4>
+                        <p>E.E Dom Artur Horshtuis</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2000</div>
+                    <div class="timeline-content">
+                        <h4>Nascimento</h4>
+                        <p>Jales/SP</p>
                     </div>
                 </div>
             </div>
